@@ -5,6 +5,7 @@ import java.util.UUID
 import com.datastax.driver.core.utils.UUIDs
 import org.apache.cassandra.utils.UUIDGen
 import java.util.Date
+import com.netflix.astyanax.serializers.TimeUUIDSerializer
 
 class TimeUuidTest extends FunSuite with Assertions {
 
@@ -74,5 +75,13 @@ class TimeUuidTest extends FunSuite with Assertions {
     val uuid: UUID = TimeUuid(sysTimestamp)
     val date: Date = uuid
     assert(date.getTime === sysTimestamp)
+  }
+
+  test("Convert UUID to bytes"){
+    import com.gilt.timeuuid._
+    val uuid: UUID = TimeUuid()
+    val bytes: Array[Byte] = uuid
+
+    assert(TimeUUIDSerializer.get().toBytes(uuid) === bytes)
   }
 }
