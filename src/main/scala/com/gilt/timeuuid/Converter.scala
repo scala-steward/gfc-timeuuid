@@ -23,9 +23,9 @@ class TimeUuidToUnixTimeStamp extends Converter[Long] {
 
 class TimeUuidToBytes extends Converter[Array[Byte]] {
   override def extract(from: UUID): Array[Byte] = {
-    val buf = ByteBuffer.wrap(new Array[Byte](2 * 8))
-    buf.putLong(from.getMostSignificantBits)
-    buf.putLong(from.getLeastSignificantBits)
-    ByteBuffer.wrap(new Array[Byte](2 * 8)).array()
+    ByteBuffer.wrap(new Array[Byte](2 * 8))
+      .putLong(from.getMostSignificantBits)
+      .putLong(from.getLeastSignificantBits)
+      .array()
   }
 }
