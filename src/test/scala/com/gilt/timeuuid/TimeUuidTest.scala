@@ -84,4 +84,13 @@ class TimeUuidTest extends FunSuite with Assertions {
 
     assert(TimeUUIDSerializer.get().toBytes(uuid) === bytes)
   }
+
+  test("Convert bytes to UUID"){
+    import com.gilt.timeuuid._
+    val uuid = TimeUuid()
+    val bytes: Array[Byte] = uuid
+    val result: UUID = bytes
+
+    assert(result === uuid)
+  }
 }

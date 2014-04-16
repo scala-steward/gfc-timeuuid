@@ -9,4 +9,6 @@ package object timeuuid {
   implicit def timeUuidToUnixTimestamp(value: UUID): Long = new TimeUuidToUnixTimeStamp().extract(value)
 
   implicit def timeUuidToBytes(value: UUID): Array[Byte] = new TimeUuidToBytes().extract(value)
+
+  implicit def bytesToTimeUuid(value: Array[Byte]) = new BytesToTimeUuid().extract(value)
 }
