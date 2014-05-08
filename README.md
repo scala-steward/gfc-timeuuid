@@ -22,5 +22,6 @@ Convert time UUID to unix date
     val uuid = Timeuuid()
     val date: Date = uuid
 
-
-
+## License
+Copyright 2014 Gilt Groupe, Inc. 
+Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0 
