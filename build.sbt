@@ -1,5 +1,3 @@
-gilt.GiltProject.jarSettings
-
 name := "commons-timeuuid"
 
 organization := "com.gilt"

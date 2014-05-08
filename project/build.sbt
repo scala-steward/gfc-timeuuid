@@ -1,1 +1,1 @@
-addSbtPlugin("com.giltgroupe" % "gilt-sbt-build" % "4.0.4")
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.6.0")
