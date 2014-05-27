@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/gilt/commons-timeuuid.png)](http://travis-ci.org/gilt/commons-timeuuid)
+
 # Commons Timeuuid
 
 An timeuuid library in Scala base on http://www.ietf.org/rfc/rfc4122.txt which generates version 1 UUIDs.
