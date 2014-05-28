@@ -1,4 +1,4 @@
-# Commons Timeuuid
+# Gfc Timeuuid
 
 An timeuuid library in Scala base on http://www.ietf.org/rfc/rfc4122.txt which generates version 1 UUIDs.
 
