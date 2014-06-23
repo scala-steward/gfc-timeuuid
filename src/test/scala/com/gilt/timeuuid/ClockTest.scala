@@ -29,7 +29,7 @@ class ClockTest extends FunSuite with Assertions with Conductors {
     val result = new java.util.concurrent.ConcurrentHashMap[Int, Seq[Long]]().asScala
 
     val threads = 20
-    val count = 10000
+    val count = 5000
 
     1 to threads foreach {
       x =>

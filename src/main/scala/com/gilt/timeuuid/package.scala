@@ -4,7 +4,6 @@ import java.util.{Date, UUID}
 import java.nio.ByteBuffer
 
 package object timeuuid {
-
   implicit class UuidConversions(from: UUID) {
     require(from.version() == 1, "Version 1 uuid required")
 
@@ -26,5 +25,4 @@ package object timeuuid {
       new UUID(buffer.getLong, buffer.getLong)
     }
   }
-
 }
