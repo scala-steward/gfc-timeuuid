@@ -9,6 +9,10 @@ object TimeUuid {
 
   def apply(): UUID = new UUID(buildTime(Clock.time()), clockSeqAndNode)
 
+  /*
+    This method does not create a unique Version 1 UUID. In many ways it goes against 
+    the general principle of a time based uuid. It is here primarily generate test UUIDs.  
+  */
   def apply(timeInMillis: Long): UUID = new UUID(buildTime(convertToNanos(timeInMillis)), clockSeqAndNode)
 
   private def convertToNanos(timeInMillis: Long): Long = (timeInMillis - Clock.StartEpoch) * 10000
