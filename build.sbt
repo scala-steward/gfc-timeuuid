@@ -2,11 +2,13 @@ name := "gfc-timeuuid"
 
 organization := "com.gilt"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.2"
+
+crossScalaVersions := Seq("2.11.2", "2.10.4")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.1.0" % "test",
-  "org.scalacheck" %% "scalacheck" % "1.11.3" % "test",
+  "org.scalatest" %% "scalatest" % "2.2.2" % "test",
+  "org.scalacheck" %% "scalacheck" % "1.11.5" % "test",
   "com.datastax.cassandra" % "cassandra-driver-core" % "2.0.1" % "test",
   "com.netflix.astyanax" % "astyanax" % "1.56.48" % "test"
 )
