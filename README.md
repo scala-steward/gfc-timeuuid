@@ -1,26 +1,26 @@
 [![Build Status](https://secure.travis-ci.org/gilt/gfc-timeuuid.png)](http://travis-ci.org/gilt/gfc-timeuuid)
 
-# Gfc Timeuuid
+# Gfc TimeUuid
 
 An timeuuid library in Scala base on http://www.ietf.org/rfc/rfc4122.txt which generates version 1 UUIDs.
 
 ## Example Usage
 Generates a new unique time based UUID
 
-    val uuid = Timeuuid()
+    val uuid = TimeUuid()
 
 Convert time UUID to unix timestamp
 
     import com.gilt.timeuuid._
 
-    val uuid = Timeuuid()
+    val uuid = TimeUuid()
     val timestamp = uuid.toLong
 
 Convert time UUID to unix date
 
     import com.gilt.timeuuid._
 
-    val uuid = Timeuuid()
+    val uuid = TimeUuid()
     val date = uuid.toDate
 
 Convert arrays of 16 bytes to UUID:
