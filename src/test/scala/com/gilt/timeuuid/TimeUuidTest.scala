@@ -37,7 +37,7 @@ class TimeUuidTest extends FunSuite with Assertions {
     val uuid: UUID = TimeUuid()
     assert(datastax.version() === uuid.version())
     assert(datastax.variant() === uuid.variant())
-    assert(datastax.timestamp() / 10000 === uuid.timestamp() / 10000) // this can only be a fuzzy test
+    assert(datastax.timestamp() / 100000 === uuid.timestamp() / 100000) // this can only be a fuzzy test
   }
 
   test("Comparability with cassandra timeUUID generation") {
@@ -45,7 +45,7 @@ class TimeUuidTest extends FunSuite with Assertions {
     val uuid: UUID = TimeUuid()
     assert(cassandra.version() === uuid.version())
     assert(cassandra.variant() === uuid.variant())
-    assert(cassandra.timestamp() / 100 === uuid.timestamp() / 100) // this can only be a fuzzy test
+    assert(cassandra.timestamp() / 100000 === uuid.timestamp() / 100000) // this can only be a fuzzy test
   }
 
   test("Comparability with Datastax timeUUID generation based on timestamp") {

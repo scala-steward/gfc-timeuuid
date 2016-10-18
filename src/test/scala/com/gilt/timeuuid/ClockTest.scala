@@ -2,13 +2,15 @@ package com.gilt.timeuuid
 
 import org.scalatest.{Assertions, FunSuite}
 import org.scalatest.concurrent.Conductors
+import org.scalatest.time.{Span, Seconds}
 
 class ClockTest extends FunSuite with Assertions with Conductors {
+  override implicit def patienceConfig = PatienceConfig(timeout = Span(10L, Seconds))
 
   test("get time") {
     val currentTime = (System.currentTimeMillis - Clock.StartEpoch) * 10000
     val time = Clock.time()
-    assert(time / 1000000 === currentTime / 1000000) //fuzzy to the millis sec
+    assert(time / 10000000 === currentTime / 10000000) //fuzzy to 10 milli secs
   }
 
   test("is unique") {
@@ -33,7 +35,7 @@ class ClockTest extends FunSuite with Assertions with Conductors {
 
     1 to threads foreach {
       x =>
-        thread("consumer " + x) {
+        threadNamed("consumer " + x) {
           result.put(x, Seq.fill(count)(Clock.time()))
         }
     }

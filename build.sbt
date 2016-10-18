@@ -2,13 +2,15 @@ name := "gfc-timeuuid"
 
 organization := "com.gilt"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.8"
 
-crossScalaVersions := Seq("2.11.2", "2.10.4")
+crossScalaVersions := Seq(scalaVersion.value, "2.12.0-RC1", "2.10.6")
+
+scalacOptions += "-target:jvm-1.7"
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.2.2" % "test",
-  "org.scalacheck" %% "scalacheck" % "1.11.5" % "test",
+  "org.scalatest" %% "scalatest" % "3.0.0" % "test",
+  "org.scalacheck" %% "scalacheck" % "1.13.2" % "test",
   "com.datastax.cassandra" % "cassandra-driver-core" % "2.0.1" % "test",
   "com.netflix.astyanax" % "astyanax" % "1.56.48" % "test"
 )
