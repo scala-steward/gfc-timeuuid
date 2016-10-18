@@ -15,6 +15,10 @@ libraryDependencies ++= Seq(
   "com.netflix.astyanax" % "astyanax" % "1.56.48" % "test"
 )
 
+releaseCrossBuild := true
+
+releasePublishArtifactsAction := PgpKeys.publishSigned.value
+
 publishMavenStyle := true
 
 publishTo := {
