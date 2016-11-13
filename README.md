@@ -1,15 +1,15 @@
 # gfc-timeuuid [![Build Status](https://secure.travis-ci.org/gilt/gfc-timeuuid.png)](http://travis-ci.org/gilt/gfc-timeuuid) [![Join the chat at https://gitter.im/gilt/gfc](https://badges.gitter.im/gilt/gfc.svg)](https://gitter.im/gilt/gfc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-An Scala timeuuid library for generating version 1 UUIDs, based on http://www.ietf.org/rfc/rfc4122.txts.
+An Scala timeuuid library for generating version 1 UUIDs, based on http://www.ietf.org/rfc/rfc4122.txts. Part of the [Gilt Foundation Classes](https://github.com/gilt?query=gfc).
 
 ## Getting gfc-timeuuid
 
-The latest version is 0.0.7, which is cross-built against Scala 2.10.x, 2.11.x and 2.12.0-RC1.
+The latest version is 0.0.8, which is cross-built against Scala 2.10.x, 2.11.x and 2.12.x.
 
 If you're using SBT, add the following line to your build file:
 
 ```scala
-libraryDependencies += "com.gilt" %% "gfc-timeuuid" % "0.0.7"
+libraryDependencies += "com.gilt" %% "gfc-timeuuid" % "0.0.8"
 ```
 
 For Maven and other build tools, you can visit [search.maven.org](http://search.maven.org/#search%7Cga%7C1%7Ccom.gilt%20gfc).
