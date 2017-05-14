@@ -36,6 +36,7 @@ Convert time UUID to unix date
     val date = uuid.toDate
 
 Convert arrays of 16 bytes to UUID:
+
     val bytes = new Array[Byte](16)
     val uuid = bytes.toUUID
 
