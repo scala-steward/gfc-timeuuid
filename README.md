@@ -1,4 +1,4 @@
-# gfc-timeuuid [![Build Status](https://secure.travis-ci.org/gilt/gfc-timeuuid.png)](http://travis-ci.org/gilt/gfc-timeuuid) [![Join the chat at https://gitter.im/gilt/gfc](https://badges.gitter.im/gilt/gfc.svg)](https://gitter.im/gilt/gfc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# gfc-timeuuid [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.gilt/gfc-timeuuid_2.12/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.gilt/gfc-timeuuid_2.12) [![Build Status](https://secure.travis-ci.org/gilt/gfc-timeuuid.png)](http://travis-ci.org/gilt/gfc-timeuuid) [![Join the chat at https://gitter.im/gilt/gfc](https://badges.gitter.im/gilt/gfc.svg)](https://gitter.im/gilt/gfc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 An Scala timeuuid library for generating version 1 UUIDs, based on http://www.ietf.org/rfc/rfc4122.txts. Part of the [Gilt Foundation Classes](https://github.com/gilt?q=gfc).
 
