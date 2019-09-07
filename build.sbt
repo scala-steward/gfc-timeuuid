@@ -12,7 +12,7 @@ javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.5" % Test,
-  "org.scalacheck" %% "scalacheck" % "1.13.5" % Test,
+  "org.scalacheck" %% "scalacheck" % "1.14.0" % Test,
   "com.datastax.cassandra" % "cassandra-driver-core" % "3.3.1" % Test,
   "com.netflix.astyanax" % "astyanax" % "3.9.0" % Test
 )
