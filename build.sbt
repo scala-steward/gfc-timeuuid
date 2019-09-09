@@ -12,9 +12,9 @@ javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.8" % Test,
-  "org.scalacheck" %% "scalacheck" % "1.13.5" % Test,
-  "com.datastax.cassandra" % "cassandra-driver-core" % "3.3.1" % Test,
-  "com.netflix.astyanax" % "astyanax" % "3.9.0" % Test
+  "org.scalacheck" %% "scalacheck" % "1.14.0" % Test,
+  "com.datastax.cassandra" % "cassandra-driver-core" % "3.3.2" % Test,
+  "com.netflix.astyanax" % "astyanax" % "3.10.2" % Test
 )
 
 releaseCrossBuild := true
