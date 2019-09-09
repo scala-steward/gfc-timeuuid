@@ -2,7 +2,7 @@ package com.gilt.timeuuid
 
 import org.scalatest.{Assertions, FunSuite}
 import java.util.UUID
-import com.datastax.driver.core.utils.UUIDs
+import com.datastax.oss.driver.api.core.uuid.Uuids
 import org.apache.cassandra.utils.UUIDGen
 import com.netflix.astyanax.serializers.TimeUUIDSerializer
 
@@ -33,7 +33,7 @@ class TimeUuidTest extends FunSuite with Assertions {
   }
 
   test("Comparability with Datastax timeUUID generation") {
-    val datastax = UUIDs.timeBased()
+    val datastax = Uuids.timeBased()
     val uuid: UUID = TimeUuid()
     assert(datastax.version() === uuid.version())
     assert(datastax.variant() === uuid.variant())
