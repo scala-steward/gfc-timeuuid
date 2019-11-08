@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.0.8" % Test,
   "org.scalacheck" %% "scalacheck" % "1.14.2" % Test,
   "org.apache.cassandra" % "cassandra-all" % "3.11.4" % Test,
-  "com.datastax.oss" % "java-driver-core" % "4.2.2" % Test,
+  "com.datastax.oss" % "java-driver-core" % "4.3.0" % Test,
   "com.netflix.astyanax" % "astyanax" % "3.10.2" % Test
 )
 
