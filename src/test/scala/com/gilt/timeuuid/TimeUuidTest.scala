@@ -1,14 +1,15 @@
 package com.gilt.timeuuid
 
-import org.scalatest.{Assertions, FunSuite}
+import org.scalatest.Assertions
 import java.util.UUID
 
 import com.datastax.driver.core.utils.UUIDs
 import com.datastax.oss.driver.api.core.uuid.Uuids
 import org.apache.cassandra.utils.UUIDGen
 import com.netflix.astyanax.serializers.TimeUUIDSerializer
+import org.scalatest.funsuite.AnyFunSuite
 
-class TimeUuidTest extends FunSuite with Assertions {
+class TimeUuidTest extends AnyFunSuite with Assertions {
 
   test("Generation timeUuid") {
     val timestamp = (System.currentTimeMillis - Clock.StartEpoch) * 10000
