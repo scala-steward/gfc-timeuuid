@@ -1,8 +1,9 @@
 package com.gilt.timeuuid
 
-import org.scalatest.{Assertions, FunSuite}
+import org.scalatest.Assertions
+import org.scalatest.funsuite.AnyFunSuite
 
-class NodeTest extends FunSuite with Assertions {
+class NodeTest extends AnyFunSuite with Assertions {
 
   test("generate node id") {
     assert(Node.id != 0)

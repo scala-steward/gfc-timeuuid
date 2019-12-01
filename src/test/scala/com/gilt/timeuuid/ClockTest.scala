@@ -1,10 +1,11 @@
 package com.gilt.timeuuid
 
-import org.scalatest.{Assertions, FunSuite}
+import org.scalatest.Assertions
 import org.scalatest.concurrent.Conductors
 import org.scalatest.time.{Span, Seconds}
+import org.scalatest.funsuite.AnyFunSuite
 
-class ClockTest extends FunSuite with Assertions with Conductors {
+class ClockTest extends AnyFunSuite with Assertions with Conductors {
   override implicit def patienceConfig = PatienceConfig(timeout = Span(10L, Seconds))
 
   test("get time") {
