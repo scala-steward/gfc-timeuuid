@@ -1,4 +1,4 @@
-package com.gilt.timeuuid
+package org.gfccollective.timeuuid
 
 import org.scalatest.Assertions
 import org.scalatest.concurrent.Conductors

@@ -1,4 +1,4 @@
-package com.gilt.timeuuid
+package org.gfccollective.timeuuid
 
 import org.scalatest.Assertions
 import java.util.UUID
@@ -64,7 +64,7 @@ class TimeUuidTest extends AnyFunSuite with Assertions {
   }
 
   test("Convert UUID to unix timestamp") {
-    import com.gilt.timeuuid._
+    import org.gfccollective.timeuuid._
     val sysTimestamp = System.currentTimeMillis
     val uuid: UUID = TimeUuid(sysTimestamp)
     val timestamp = uuid.toLong
@@ -72,7 +72,7 @@ class TimeUuidTest extends AnyFunSuite with Assertions {
   }
 
   test("Convert UUID to unix date") {
-    import com.gilt.timeuuid._
+    import org.gfccollective.timeuuid._
     val sysTimestamp = System.currentTimeMillis
     val uuid: UUID = TimeUuid(sysTimestamp)
     val date = uuid.toDate
@@ -80,7 +80,7 @@ class TimeUuidTest extends AnyFunSuite with Assertions {
   }
 
   test("Convert UUID to bytes") {
-    import com.gilt.timeuuid._
+    import org.gfccollective.timeuuid._
     val uuid: UUID = TimeUuid()
     val bytes = uuid.toBytes
 
@@ -88,7 +88,7 @@ class TimeUuidTest extends AnyFunSuite with Assertions {
   }
 
   test("Convert bytes to UUID") {
-    import com.gilt.timeuuid._
+    import org.gfccollective.timeuuid._
     val uuid = TimeUuid()
     val bytes = uuid.toBytes
     val result: UUID = bytes.toUUID

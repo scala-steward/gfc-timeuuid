@@ -1,4 +1,4 @@
-package com.gilt.timeuuid
+package org.gfccollective.timeuuid
 
 import java.net.{InetAddress, NetworkInterface}
 import scala.util.Try

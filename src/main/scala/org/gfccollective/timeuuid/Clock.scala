@@ -1,4 +1,4 @@
-package com.gilt.timeuuid
+package org.gfccollective.timeuuid
 
 import java.util.concurrent.atomic.AtomicLong
 import scala.annotation.tailrec

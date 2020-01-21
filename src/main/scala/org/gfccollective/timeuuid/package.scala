@@ -1,4 +1,4 @@
-package com.gilt
+package org.gfccollective
 
 import java.util.{Date, UUID}
 import java.nio.ByteBuffer
