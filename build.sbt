@@ -2,9 +2,9 @@ name := "gfc-timeuuid"
 
 organization := "org.gfccollective"
 
-scalaVersion := "2.12.10"
+scalaVersion := "2.13.1"
 
-crossScalaVersions := Seq(scalaVersion.value, "2.13.1")
+crossScalaVersions := Seq(scalaVersion.value, "2.12.10")
 
 scalacOptions += "-target:jvm-1.8"
 
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.14.3" % Test,
   "org.apache.cassandra" % "cassandra-all" % "3.11.5" % Test,
   "com.datastax.oss" % "java-driver-core" % "4.4.0" % Test,
-  "com.netflix.astyanax" % "astyanax" % "3.10.2" % Test
+  "com.netflix.astyanax" % "astyanax" % "3.10.2" % Test,
 )
 
 releaseCrossBuild := true
