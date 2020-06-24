@@ -1,7 +1,8 @@
 # gfc-timeuuid [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.gfccollective/gfc-timeuuid_2.12/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/org.gfccollective/gfc-timeuuid_2.12) [![Build Status](https://github.com/gfc-collective/gfc-timeuuid/workflows/Scala%20CI/badge.svg)](https://github.com/gfc-collective/gfc-timeuuid/actions) [![Coverage Status](https://coveralls.io/repos/gfc-collective/gfc-timeuuid/badge.svg?branch=master&service=github)](https://coveralls.io/github/gfc-collective/gfc-timeuuid?branch=master)
 
 An Scala timeuuid library for generating version 1 UUIDs, based on http://www.ietf.org/rfc/rfc4122.txts.
-A fork and new home of the now unmaintained Gilt Foundation Classes (`com.gilt.gfc`), now called the [GFC Collective](https://github.com/gfc-collective), maintained by some of the original authors.
+
+This library is a fork and new home of the now unmaintained Gilt Foundation Classes (`com.gilt.gfc`), now called the [GFC Collective](https://github.com/gfc-collective), maintained by some of the original authors.
 
 
 ## Getting gfc-timeuuid
