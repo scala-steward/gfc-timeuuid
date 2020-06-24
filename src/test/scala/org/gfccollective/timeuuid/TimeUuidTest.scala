@@ -40,7 +40,9 @@ class TimeUuidTest extends AnyFunSuite with Assertions {
     val uuid: UUID = TimeUuid()
     assert(datastax.version() === uuid.version())
     assert(datastax.variant() === uuid.variant())
-    assert(datastax.timestamp() / 100000 === uuid.timestamp() / 100000) // this can only be a fuzzy test
+    val tsDiff = datastax.timestamp() - uuid.timestamp()
+    assert(tsDiff < 10000000L) // this can only be a fuzzy test
+    assert(tsDiff > -10000000L) // this can only be a fuzzy test
   }
 
   test("Comparability with cassandra timeUUID generation") {
