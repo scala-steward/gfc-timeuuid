@@ -1,3 +1,5 @@
+import scoverage.ScoverageKeys
+
 name := "gfc-timeuuid"
 
 organization := "org.gfccollective"
@@ -17,6 +19,10 @@ libraryDependencies ++= Seq(
   "com.datastax.oss" % "java-driver-core" % "4.7.2" % Test,
   "com.netflix.astyanax" % "astyanax" % "3.10.2" % Test,
 )
+
+ScoverageKeys.coverageFailOnMinimum := true
+
+ScoverageKeys.coverageMinimum := 91.3
 
 releaseCrossBuild := true
 
