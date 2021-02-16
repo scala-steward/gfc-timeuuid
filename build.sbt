@@ -15,7 +15,7 @@ javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.3" % Test,
   "org.scalacheck" %% "scalacheck" % "1.15.2" % Test,
-  "org.apache.cassandra" % "cassandra-all" % "3.11.9" % Test,
+  "org.apache.cassandra" % "cassandra-all" % "3.11.10" % Test,
   "com.datastax.oss" % "java-driver-core" % "4.10.0" % Test,
   "com.netflix.astyanax" % "astyanax" % "3.10.2" % Test,
 )
