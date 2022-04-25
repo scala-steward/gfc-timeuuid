@@ -13,7 +13,7 @@ scalacOptions += "-target:jvm-1.8"
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.2.11" % Test,
+  "org.scalatest" %% "scalatest" % "3.2.12" % Test,
   "org.scalacheck" %% "scalacheck" % "1.16.0" % Test,
   "org.apache.cassandra" % "cassandra-all" % "4.0.3" % Test,
   "com.datastax.oss" % "java-driver-core" % "4.14.0" % Test,
